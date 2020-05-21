@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Planet:</strong>
+  <%= @chart.planet %>
+</p>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @chart.distance %>
+</p>
+
+<p>
+  <strong>Temperature:</strong>
+  <%= @chart.temperature %>
+</p>
+
+<%= link_to 'Edit', edit_chart_path(@chart) %> |
+<%= link_to 'Back', charts_path %>
