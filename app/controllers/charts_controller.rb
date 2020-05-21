@@ -5,6 +5,7 @@ class ChartsController < ApplicationController
   # GET /charts.json
   def index
     @charts = Chart.all
+    @keep = Chart.group(:distance).count
   end
 
   # GET /charts/1
